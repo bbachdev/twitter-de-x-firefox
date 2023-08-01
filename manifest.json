@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Twitter De-X",
+  "version": "0.8",
+
+  "description": "Modifies/removes \"X\" branding from Twitter (among other features)",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.twitter.com/*"],
+      "js": ["dist/content_bundle.js"]
+    }
+  ],
+  "permissions": ["activeTab"],
+
+  "web_accessible_resources": ["assets/*"]
+
+}
